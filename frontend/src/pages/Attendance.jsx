@@ -111,9 +111,10 @@ function Attendance() {
                 <div className="filter-bar">
                     <select
                         className="form-control"
+                        style={{color:"black",minWidth: 220}}
                         value={selectedEmployee}
                         onChange={(e) => setSelectedEmployee(e.target.value)}
-                        style={{ minWidth: 220 }}
+                    
                     >
                         <option value="">Select Employee</option>
                         {employees.map(emp => (
@@ -255,6 +256,7 @@ function Attendance() {
                     <div className="form-group">
                         <label>Employee *</label>
                         <select
+                            style={{color:"black"}}
                             className="form-control"
                             name="employee_id"
                             value={markForm.employee_id}
